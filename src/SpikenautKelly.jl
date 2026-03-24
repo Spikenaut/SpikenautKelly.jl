@@ -17,7 +17,7 @@ F  = clamp(F, 0.02, 0.20)        # conservative bounds
 
 ## Provenance
 
-Extracted from Eagle-Lander, a private neuromorphic GPU supervisor (closed-source).
+Extracted from Eagle-Lander, the author's own private neuromorphic GPU supervisor repository (closed-source).
 The Kelly sizing module ran in
 production for Dynex/Quai/Qubic/BTC portfolio decisions driven by a 16-neuron
 LIF SNN before being open-sourced as a standalone Julia package.
