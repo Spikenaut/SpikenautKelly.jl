@@ -15,10 +15,26 @@ F  = F* / 2                      # half-Kelly (standard practice)
 F  = clamp(F, 0.02, 0.20)        # conservative bounds
 ```
 
-## Reference
+## Provenance
 
-Kelly, J.L. (1956). A New Interpretation of Information Rate.
-Bell System Technical Journal, 35(4), 917–926.
+Extracted from Eagle-Lander, a private neuromorphic GPU supervisor (closed-source).
+The Kelly sizing module ran in
+production for Dynex/Quai/Qubic/BTC portfolio decisions driven by a 16-neuron
+LIF SNN before being open-sourced as a standalone Julia package.
+
+## References
+
+- Kelly, J.L. (1956). A New Interpretation of Information Rate.
+  *Bell System Technical Journal*, 35(4), 917–926.
+  https://doi.org/10.1002/j.1538-7305.1956.tb03809.x
+
+- Thorp, E.O. (1969). Optimal Gambling Systems for Favorable Games.
+  *Review of the International Statistical Institute*, 37(3), 273–293.
+  Introduced half-Kelly as a practical variance reduction technique.
+
+- MacLean, L.C., Thorp, E.O., & Ziemba, W.T. (2011).
+  *The Kelly Capital Growth Investment Criterion*. World Scientific.
+  Comprehensive treatment of Kelly variants and implementation considerations.
 
 ## Example
 
